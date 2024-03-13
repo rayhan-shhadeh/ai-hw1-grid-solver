@@ -3,6 +3,9 @@ body {
     align-items: center;
     justify-content: center;
     align-content: center;
+    background-color: #000000;
+    padding: 0px;
+    margin: 0px;
 }
 
 #grid-container {
@@ -69,4 +72,16 @@ button {
 container-controller{
     align-items: center;
     justify-content: center;
+}#gradient
+{
+  width: 100%;
+  height: 800px;
+  padding: 0px;
+  margin: 0px;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  justify-content: center;
+  justify-self: center;
+  justify-items: center;
 }

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,20 +9,23 @@
     <title>Grid Solver</title>
 </head>
 <body>
-    <div id="grid-container" class="container-controller"></div>
-    <div id="controls">
-        <label for="width">Rows:</label>
-        <input type="number" id="width" min="1" value="10">
-        <label for="height">Columns:</label>
-        <input type="number" id="height" min="1" value="10">
-        <label for="heuristic">Heuristic:</label>
-        <select id="heuristic">
-            <option value="manhattan">Manhattan</option>
-            <option value="euclidean">Euclidean</option>
-        </select>
-        <button onclick="generateGrid()">Generate Grid</button>
-        <button onclick="solvePath()">Solve Path</button>
+    <div id="gradient" >
+        <div id="grid-container" class="container-controller"></div>
+        <div id="controls">
+            <label for="width">Rows:</label>
+            <input type="number" id="width" min="1" value="10">
+            <label for="height">Columns:</label>
+            <input type="number" id="height" min="1" value="10">
+            <label for="heuristic">Heuristic:</label>
+            <select id="heuristic">
+                <option value="manhattan">Manhattan</option>
+                <option value="euclidean">Euclidean</option>
+            </select>
+            <button onclick="generateGrid()">Generate Grid</button>
+            <button onclick="solvePath()">Solve Path</button>
+        </div>
     </div>
     <script src="script.js"></script>
+    <script src="bg.js"></script>
 </body>
 </html>
