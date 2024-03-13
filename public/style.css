@@ -70,6 +70,7 @@ button {
     100% { background-color: #5bc0de; }
 }
 container-controller{
+    background-color: #ccc;
     align-items: center;
     justify-content: center;
 }#gradient

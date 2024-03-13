@@ -1,11 +1,11 @@
 
 var colors = new Array(
-    [210,222,218],
-    [60,255,60],
-    [255,35,98],
-    [45,175,230],
-    [255,0,255],
-    [255,128,0]);
+    [15,16,53],//0F1035
+    [54,84,134],//365486
+    [116,105,182],//7FC7D9
+    [103,114,157],//67729D
+    [66,125,157],//427D9D
+    [221,242,253]);//DDF2FD
   
   var step = 0;
   //color table indices for: 
@@ -16,7 +16,7 @@ var colors = new Array(
   var colorIndices = [0,1,2,3];
   
   //transition speed
-  var gradientSpeed = 0.002;
+  var gradientSpeed = 0.01;
   
   function updateGradient()
   {

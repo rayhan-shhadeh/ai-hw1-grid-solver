@@ -99,20 +99,13 @@ function solvePath() {
             alert('Please set start and target cells.');
             return;
         }
-    
-        const startTime = performance.now();
-    
         const path = aStarAlgorithm();
-    
-        const endTime = performance.now();
-        const elapsedTime = endTime - startTime;
-    
         if (path) {
             displayPath(path);
              // Number of steps is the length of the path minus 1 -- we count from start -> goal -1 
             const steps = path.length - 1;
             const testedNodes = Object.keys(closedSet).length;
-            alert(`Path found in ${elapsedTime.toFixed(2)} milliseconds.\nSteps: ${steps}\nTested Nodes: ${testedNodes}`);
+            alert(`Goal Reached SUCCESSFULLY! \nSteps: ${steps}\nTested Nodes: ${testedNodes}`);
         } else {
             alert('No path found.');
         }
