@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Grid Solver</title>
+</head>
+<body>
+    <div id="grid-container" class="container-controller"></div>
+    <div id="controls">
+        <label for="width">Rows:</label>
+        <input type="number" id="width" min="1" value="10">
+        <label for="height">Columns:</label>
+        <input type="number" id="height" min="1" value="10">
+        <label for="heuristic">Heuristic:</label>
+        <select id="heuristic">
+            <option value="manhattan">Manhattan</option>
+            <option value="euclidean">Euclidean</option>
+        </select>
+        <button onclick="generateGrid()">Generate Grid</button>
+        <button onclick="solvePath()">Solve Path</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
