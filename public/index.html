@@ -14,7 +14,7 @@
     <div id='stars'></div>
     <div id='stars2'></div>
     <div id='stars3'></div>
-    <div id='title'>
+    <div id='grid-solver'>
     </div>
     
     <div id="gradient" >
@@ -29,6 +29,13 @@
                 <option value="manhattan">Manhattan</option>
                 <option value="euclidean">Euclidean</option>
             </select>
+
+            <label for="targetCount">Number of Targets:</label>
+            <select id="targetCount" onchange="updateTargetCount()">
+                <option value="1">1 Target</option>
+                <option value="2">2 Targets</option>
+            </select>
+
             <button onclick="generateGrid()">Generate Grid</button>
             <button onclick="solvePath()">Solve Path</button>
         </div>
@@ -37,5 +44,6 @@
         Rayhan Shhadeh
       </span>
     <script src="script.js"></script>
+
 </body>
 </html>
